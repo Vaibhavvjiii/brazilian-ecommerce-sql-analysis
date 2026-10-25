@@ -73,7 +73,8 @@ Add 3–5 findings based on your actual query results.
 - `01_data_validation.sql` — data-quality checks
 - `02_business_analysis.sql` — business analysis queries
 - `data_quality_notes.md` — validation findings
-- `screenshots/` — selected query and result screenshots
+- `data_validation_result` — selected query and result screenshots
+- `business_analysis_result` — selected query and result screenshots
 
 ## How to Run
 
