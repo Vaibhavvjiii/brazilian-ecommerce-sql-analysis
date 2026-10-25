@@ -23,7 +23,6 @@ The dataset contains anonymized e-commerce records, including orders, customers,
 
 - PostgreSQL
 - pgAdmin
-- SQL
 - GitHub
 
 ## Data Validation
