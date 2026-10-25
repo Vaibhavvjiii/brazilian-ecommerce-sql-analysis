@@ -1,0 +1,72 @@
+# Data Quality Notes
+
+## 1. Project Overview
+
+This document summarizes the initial data-quality checks performed on the Brazilian E-Commerce Public Dataset by Olist using PostgreSQL and pgAdmin.
+
+## 2. Row Counts
+
+| Table | Number of Rows |
+|---|---:|
+| Orders | 99,441 |
+| Order Items | 112,650 |
+| Customers | 99,441 |
+| Products | 32,951 |
+
+The category translation table should also be included if it was imported and validated.
+
+## 3. Missing Values
+
+The following results were recorded for the important columns checked:
+
+| Table | Missing Values Found |
+|---|---:|
+| Customers | 0 |
+| Orders | 0 |
+| Order Items | 0 |
+| Products | 0 |
+
+**Note:** These counts apply only to the columns checked during validation, not necessarily every column in each table.
+
+## 4. Duplicate Checks
+
+No duplicate identifiers were found in the checks performed on the following columns:
+
+- Orders: `order_id`
+- Order Items: `order_item_id`
+- Products: `product_id`
+- Customers: `customer_id`
+
+## 5. Order Date Range
+
+| Metric | Date |
+|---|---|
+| First order date | 2016-09-04 |
+| Last order date | 2018-10-17 |
+
+## 6. Order Status Distribution
+
+| Order Status | Number of Orders |
+|---|---:|
+| Delivered | 96,478 |
+| Shipped | 1,107 |
+| Canceled | 625 |
+| Unavailable | 609 |
+| Invoiced | 314 |
+| Processing | 301 |
+| Created | 5 |
+| Approved | 2 |
+
+## 7. Relationship Validation
+
+Record the results of the following checks after running them:
+
+- Order items without a matching order: [Enter result]
+- Order items without a matching product: [Enter result]
+- Orders without a matching customer: [Enter result]
+
+## 8. Conclusion
+
+Initial validation covered table row counts, missing values in selected columns, duplicate identifiers, order dates, and order status distribution.
+
+These checks provide a starting point for the SQL business analysis. Additional relationship and value checks should be documented after their results have been verified.
