@@ -70,7 +70,7 @@ Add 3–5 findings based on your actual query results.
 
 ## Repository Contents
 
-- `01_data_validation.sql` — data-quality checks
+- `'01_data_validation.sql'` — data-quality checks
 - `02_business_analysis.sql` — business analysis queries
 - `data_quality_notes.md` — validation findings
 - `data_validation_result.png` — selected query and result screenshots
