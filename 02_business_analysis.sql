@@ -5,10 +5,11 @@ FROM olist_orders
 ;
 
 --How many delivered orders exist?	
-SELECT 
+SELECT order_status,
 	COUNT(*)
 FROM olist_orders
-WHERE order_status = 'delivered'
+GROUP BY order_status
+HAVING order_status = 'delivered'
 ;
 
 --What percentage of orders were delivered?	
